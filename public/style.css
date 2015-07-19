@@ -1,0 +1,56 @@
+/*
+$font-size: 19vh;
+$bg: white;
+$color:hsla(278, 10%, 63%,.8);
+$overlay-url: 'http://themes-pixeden.com/playground/text/tenue/assets/img/texture.jpg';
+*/
+body {
+  overflow:hidden;
+  height:100vh;
+  width:100vw;
+  background-image: url('http://themes-pixeden.com/playground/text/tenue/assets/img/texture.jpg');
+  margin: 0;
+}
+/*rgb(238, 217, 230)*/
+.header-bar {
+  height: 100px;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bolder;
+  font-style: italic;
+  margin: 0;
+
+
+}
+
+h1 .header-bar{
+  margin: 20px, 0, 0, 50px;
+}
+
+
+
+.tenue-overlay {
+  background-blend-mode: difference, color;
+  background-image: linear-gradient(30deg, rgba(255, 0, 0, 0) 0%, hsl(0, 100%, 57%) 13%, hsla(300, 100%, 57%, .84) 15%, hsla(20, 50%, 57%, 1) 25%, hsla(10, 60%, 57%, .73) 33%, hsl(180, 50%, 57%) 48%, hsla(180, 50%, 57%, .9) 49%,hsl(20, 50%, 57%) 57%, hsl(60, 50%, 57%) 63%, hsla(70, 50%, 57%,1) 67%, hsla(8, 59%, 57%,1) 74%, hsla(126, 99%, 57%,.8) 84%, hsla(59, 49%, 57%,1) 86%, hsla(126, 99%, 57%,0.7)  100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400%;
+  left: 0;
+  mix-blend-mode: difference;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  width: 200%;
+  animation: ring 20s cubic-bezier( 0.74, 0.31, 0.37, 0.8) infinite alternate;
+  
+}
+@keyframes ring{
+  50% { transform: scale(3);}
+100% { transform: translate(-50%,-50%) 
+  rotateZ(360deg) ;
+}
+}
+
+.u-dn { display: none; }

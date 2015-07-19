@@ -1,0 +1,25 @@
+<h2>Books</h2>
+
+<ul class="books">
+  <% @books.each do |book| %>
+    <li>
+      <strong>
+        <a href="/books/<%= book.id %>"><%= book.to_s %></a>
+      </strong>
+
+      <a href ="/books/<%= book.id %>/edit">
+        Edit
+      </a>
+    <form class="delete" id="delete-book" method="POST" action="/books/<%= book.id %>">
+      <input type="hiden" name="_method" value="DELETE">
+
+      <input type="submit" value="Delete Book">
+
+    </form>
+    </li>
+  <% end %>
+</ul>
+
+<hr/>
+
+<a class="btn" href="/books/new">Add Book</a>  

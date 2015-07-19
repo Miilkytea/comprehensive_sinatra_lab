@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My favorite things</title>
+  <link rel="stylesheet" type="text/css" href="style.css" /> 
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900italic' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+  
+  <div class="header-bar">
+    <h1>My Favorite Books</h1>
+  </div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Tun.r</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/songs">Songs</a></li>
+        <li><a href="/songs/new">Add A Song</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="tenue-overlay"></div>
+  <main>
+    <%= yield %>
+  </main>
+
+
+    <script src='js/main.js'></script>
+
+</body>
+</html>

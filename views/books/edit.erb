@@ -1,0 +1,15 @@
+<h2>Edit Books</h2>
+<form class="book" id="edit-book" method "POST" action="/books/<%= @book.id %>">
+  <input type="hidden" name="_method" value="PUT">
+  <div>
+    <label for="book-title">Title</label>
+    <input type='text' name='book[title]' id="book-title" value="<%= @book.title%>">
+  </div>
+  <div>
+    <label for="book-author"> Author</label>
+    <input type='text' name='book[author]' id="book-author" value="<%= @book.author%>">
+  </div>  
+  <div>
+    <input type="submit" value"Save Book" class='btn'>
+  </div>
+</form>    
